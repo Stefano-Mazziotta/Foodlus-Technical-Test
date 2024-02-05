@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev:build": "tsc",
-        "dev:serve": "nodemon --env-file=./.env -e js -w dist dist/main.js"
+        "dev:serve": "nodemon --env-file=./.env -e js -w dist dist/server/"
     },
     "author": "Stefano Mazziotta",
     "license": "ISC",
