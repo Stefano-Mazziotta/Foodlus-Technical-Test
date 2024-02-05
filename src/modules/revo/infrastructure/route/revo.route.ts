@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { ExternalApiRevoRepository } from "../repository/externalApiRevo.repository"
+import { ExternalApiRevoRepository } from "../repositories/externalApiRevo.repository"
 import { AllRevoTablesSearcher } from "../../application/SerchAll/AllRevoTablesSearcher"
 import { AllRevoTablesController } from "../controller/allRevoTables.controller"
 // import Revo
