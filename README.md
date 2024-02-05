@@ -73,7 +73,7 @@ $ npm run dev:serve # Running at http://localhost:8080/
 
 -   {`POST`} Should retrieve the bearer token
 
-{Body}
+Body
 
 ```bash
 username: {VALID_USER_USERNAME}
@@ -93,7 +93,7 @@ password {VALID_USER_PASSWORD}
 
 #### api/tables
 
-{Header}
+Header
 
 ```bash
 Bearer {TOKEN_LOGIN_RESPONSE}
