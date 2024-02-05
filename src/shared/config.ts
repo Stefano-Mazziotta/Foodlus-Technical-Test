@@ -10,9 +10,9 @@ export const SERVER_CONFIG = {
         SECRET_TOKEN: process.env.SECRET_TOKEN || ""
     },
     REVO: {
-        BASE_URL: process.env.REVO_BASE_URL || "",
-        ACCOUNT: process.env.REVO_ACCOUNT,
-        THE_TOKEN: process.env.REVO_THE_TOKEN,
-        CLIENT_TOKEN: process.env.REVO_CLIENT_TOKEN
+        BASE_URL: process.env.REVO_API_BASE_URL || "",
+        TENANT: process.env.REVO_TENANT || "",
+        AUTH_TOKEN: process.env.REVO_AUTH_TOKEN || "",
+        CLIENT_TOKEN: process.env.REVO_CLIENT_TOKEN || ""
     }
 }
