@@ -18,8 +18,6 @@
 
 ## Getting Started
 
-# Assignment for the freelancer
-
 #### 1. Install Dependencies
 
 ```bash
