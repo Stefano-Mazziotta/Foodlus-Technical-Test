@@ -4,6 +4,7 @@
     "description": "This is an assignment for integrations development",
     "main": "index.js",
     "scripts": {
+        "test": "jest --watchAll",
         "dev:build": "tsc",
         "dev:serve": "nodemon --env-file=./.env -e js -w dist dist/server/"
     },
