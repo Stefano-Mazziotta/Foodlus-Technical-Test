@@ -24,7 +24,7 @@
 $ npm i
 ```
 
-#### 2. Setup dot env file(s)
+#### 2. Setup .env file
 
 Place the bellow content in the root .env
 
