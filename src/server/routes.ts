@@ -2,10 +2,11 @@ import revoRoutes from "../modules/revo/infrastructure/route/revo.route"
 import authRoutes from "../modules/auth/infrastructure/routes/auth.route"
 
 import { Router } from "express"
+import { userExtractor } from "../modules/auth/infrastructure/middlewares/userExtractor"
 
 export const routes = Router()
 
-routes.use(revoRoutes)
 routes.use(authRoutes)
+routes.use(userExtractor, revoRoutes)
 
 export default routes
