@@ -53,14 +53,66 @@ JWT_EXPIRE_IN=10h
 $ npm run test
 ```
 
-#### 4. Build project
+#### 4. Run build command
 
 ```bash
 $ npm run dev:build
 ```
 
-#### 4. Serve the server
+#### 5. Serving the server
 
 ```bash
 $ npm run dev:serve # Running at http://localhost:8080/
 ```
+
+## API
+
+### Authorization
+
+#### api/login
+
+-   {`POST`} Should retrieve the bearer token
+
+{Body}
+
+```bash
+username: {VALID_USER_USERNAME}
+email {VALID_USER_EMAIL}
+password {VALID_USER_PASSWORD}
+```
+
+-   Example: 200
+    ```json
+    {
+        "userValidated": {
+            "username": "smzt",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNtenQiLCJpYXQiOjE3MDcxNjA5NDZ9.AlYBGO5dZ_8zQ-8fQAgNvfXJ_s6AuNka8BsEGOyKLFk"
+        }
+    }
+    ```
+
+#### api/tables
+
+{Header}
+
+```bash
+Bearer {TOKEN_LOGIN_RESPONSE}
+```
+
+-   {`GET`} Should retrieve all available Zones with Tables
+    -   Example: 200
+    ```json
+    [
+        {
+            "name": "Room 1",
+            "serviceLocations": [
+                {
+                    "name": "Table 1",
+                    "code": 1,
+                    "zoneId": 1,
+                    "zoneName": "Room 1"
+                }
+            ]
+        }
+    ]
+    ```
