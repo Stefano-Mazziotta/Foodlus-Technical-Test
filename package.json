@@ -3,7 +3,10 @@
     "version": "1.0.0",
     "description": "This is an assignment for integrations development",
     "main": "index.js",
-    "scripts": {},
+    "scripts": {
+        "dev:build": "tsc",
+        "dev:serve": "nodemon --env-file=./.env -e js -w dist dist/main.js"
+    },
     "author": "Stefano Mazziotta",
     "license": "ISC",
     "devDependencies": {
