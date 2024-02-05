@@ -3,6 +3,7 @@ import cors from "cors"
 import routes from "./routes"
 
 import { SERVER_CONFIG } from "../shared/config"
+import { globalErrorHandler } from "./middlewares/errorHandler"
 
 const { PREFIX, SIZE_LIMIT } = SERVER_CONFIG.SERVER
 
@@ -19,6 +20,7 @@ export const createServerApp = (): Application => {
     )
 
     app.use(PREFIX, routes)
+    app.use(globalErrorHandler)
 
     return app
 }
