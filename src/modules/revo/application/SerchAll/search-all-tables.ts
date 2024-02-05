@@ -1,6 +1,6 @@
 import { RevoRepository } from "../../domain/revo.repository"
 
-export class AllRevoTablesSearcher {
+export class SearchAllTables {
     constructor(private readonly revoRepository: RevoRepository) {}
 
     public searchAll = async () => {

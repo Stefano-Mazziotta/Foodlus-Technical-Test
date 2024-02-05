@@ -2,7 +2,7 @@ import { SERVER_CONFIG } from "../../../../shared/config"
 import { RevoRepository } from "../../domain/revo.repository"
 import { FoodlusTableModel } from "../../domain/tables"
 import { FoodlusZoneModel } from "../../domain/zone"
-import { ResponseRoomsWithTables } from "../interfaces/ExternalApiResponse.interface"
+import { ResultRoomsWithTables } from "../interfaces/external-api-result.interface"
 
 export class ExternalApiRevoRepository implements RevoRepository {
     private endpoints = {
@@ -14,7 +14,7 @@ export class ExternalApiRevoRepository implements RevoRepository {
             endpoint: this.endpoints.GET_REVO_TABLES
         })
 
-        const result: ResponseRoomsWithTables = await response.json()
+        const result: ResultRoomsWithTables = await response.json()
         const { data } = result
 
         const zonesWithServiceLocations = data.map(({ id, name, tables }) => {

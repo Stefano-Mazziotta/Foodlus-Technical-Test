@@ -1,7 +1,7 @@
-import { ExternalApiRevoRepository } from "../../../../../src/modules/revo/infrastructure/repositories/externalApiRevo.repository"
+import { ExternalApiRevoRepository } from "../../../../../src/modules/revo/infrastructure/repositories/external-api-revo.repository"
 
-import { API_DATA_ROOMS_WITH_TABLES_RESULT } from "../../__mocks__/ApiDataRoomResult"
-import { FOODLUS_ZONE_MODEL } from "../../__mocks__/FoodlusZoneModel"
+import { API_DATA_ROOMS_WITH_TABLES_RESULT } from "../../__mocks__/api-data-rooms-result"
+import { FOODLUS_ZONE_MODEL } from "../../__mocks__/foodlus-zone-model"
 
 // Mocking the fetch function
 global.fetch = jest.fn(() =>

@@ -1,4 +1,4 @@
-export interface ResponseRoomsWithTables {
+export interface ResultRoomsWithTables {
     current_page: number
     data: Data[]
     first_page_url: string

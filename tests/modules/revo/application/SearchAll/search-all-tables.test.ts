@@ -1,6 +1,6 @@
-import { AllRevoTablesSearcher } from "../../../../../src/modules/revo/application/SerchAll/AllRevoTablesSearcher"
+import { SearchAllTables } from "../../../../../src/modules/revo/application/SerchAll/search-all-tables"
 import { RevoRepository } from "../../../../../src/modules/revo/domain/revo.repository"
-import { FOODLUS_ZONE_MODEL } from "../../__mocks__/FoodlusZoneModel"
+import { FOODLUS_ZONE_MODEL } from "../../__mocks__/foodlus-zone-model"
 
 // Mock the RevoRepository
 const mockRevoRepository: jest.Mocked<RevoRepository> = {
@@ -8,10 +8,10 @@ const mockRevoRepository: jest.Mocked<RevoRepository> = {
 }
 
 describe("AllRevoTablesSearcher", () => {
-    let searcher: AllRevoTablesSearcher
+    let searcher: SearchAllTables
 
     beforeEach(() => {
-        searcher = new AllRevoTablesSearcher(mockRevoRepository)
+        searcher = new SearchAllTables(mockRevoRepository)
     })
 
     afterEach(() => {

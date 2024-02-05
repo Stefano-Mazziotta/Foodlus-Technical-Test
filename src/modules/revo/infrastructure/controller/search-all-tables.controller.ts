@@ -1,14 +1,12 @@
 import { Request, Response } from "express"
-import { AllRevoTablesSearcher } from "../../application/SerchAll/AllRevoTablesSearcher"
+import { SearchAllTables } from "../../application/SerchAll/search-all-tables"
 
-export class AllRevoTablesController {
-    constructor(
-        private readonly allRevoTablesSearcher: AllRevoTablesSearcher
-    ) {}
+export class SearchAllTablesController {
+    constructor(private readonly searchAllTables: SearchAllTables) {}
 
     getAllTables = async (request: Request, response: Response) => {
         try {
-            const tables = await this.allRevoTablesSearcher.searchAll()
+            const tables = await this.searchAllTables.searchAll()
             response.send({ tables })
         } catch (error) {
             console.error("Error in getAllTables:", error)
