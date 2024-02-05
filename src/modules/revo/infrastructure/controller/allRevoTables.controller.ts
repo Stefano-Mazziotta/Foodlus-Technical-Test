@@ -1,7 +1,7 @@
 import { Request, Response } from "express"
 import { AllRevoTablesSearcher } from "../../application/SerchAll/AllRevoTablesSearcher"
 
-export class RevoController {
+export class AllRevoTablesController {
     constructor(
         private readonly allRevoTablesSearcher: AllRevoTablesSearcher
     ) {}
