@@ -1,18 +1,31 @@
 # Foodlus Technical Test
 
-## Steps to follow
+## Description
+I chose to construct the SERVER REST API with the ports & adapters architecture, as it benefits scalability, organization, testability and new features integrations of the backend. 
 
-1. Create Revo tables/zones models
-2. Create getRevoTables function (index.ts)
-3. Create unit tests for getRevoTables function
-4. The freelancer will set up a server with an endpoint (POST) which will listen to queries from the outside (getTables)
-5. The freelancer will set up an authorization via a Dummy API Token
+## Features
 
-## Delivery (48 hours from the reception of the assignment)
+✅ Express.js server using typescript
+    ✅ REST API
+    ✅ Ports & Adapters architecture (clean architecture)
+    ✅ Error handler
+    ✅ Routes
+✅ Revo Module
+    ✅ Revo API integration
+    ✅ Zones and Tables models
+    ✅ /api/tables endpoint - get all tables separated by zone
+    ✅ Unit tests
+✅ Auth Module
+    ✅ Json Web Token integration
+    ✅ User validation middleware
+    ✅ /api/login endpoint - get access token. It's used to fetch protected endpoints
 
--   The freelancer will provide the code for an Express Server using Typescript
--   The freelancer will provide documentation for connecting to the endpoint (token and options)
--   The freelancer will provide the repository containing the freelancer's code
+## Upgrades
+[] Frontend development such as a dashboard to analyse statitics on charts
+[] Improve the error handler logic
+[] Implement the user authentication with persistence
+[] Integrate more endpoints from REVO API
+[] Implement unit, functional, acceptance, and integration testing
 
 # Docuementation
 
