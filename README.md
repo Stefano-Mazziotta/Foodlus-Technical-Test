@@ -23,13 +23,13 @@ I chose to construct the SERVER REST API with the ports & adapters architecture,
 
 ## Upgrades
 
--   [] Frontend development such as a dashboard to analyse statitics on charts
--   [] Improve the error handler logic
--   [] Implement the user authentication with persistence
--   [] Integrate more endpoints from REVO API
--   [] Implement unit, functional, acceptance, and integration testing
+-   [ ] Frontend development such as a dashboard to analyse statitics on charts
+-   [ ] Improve the error handler logic
+-   [ ] Implement the user authentication with persistence
+-   [ ] Integrate more endpoints from REVO API
+-   [ ] Implement unit, functional, acceptance, and integration testing
 
-# Docuementation
+# Documentation
 
 ## Getting Started
 
@@ -105,6 +105,8 @@ password {VALID_USER_PASSWORD}
         }
     }
     ```
+
+### Revo API integration
 
 #### api/tables
 
